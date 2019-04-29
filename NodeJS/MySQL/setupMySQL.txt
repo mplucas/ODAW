@@ -1,0 +1,17 @@
+instalacao:
+sudo apt-get update
+sudo apt-get install mysql-server
+
+abrir o shell:
+systemctl start mysql
+sudo /usr/bin/mysql -u root -p
+
+ver bancos de dados
+SHOW DATABASES;
+
+verificar porta a ser utilizada pelo servidor
+SHOW GLOBAL VARIABLES LIKE 'PORT';
+
+mudar senhas para '123'
+ALTER USER 'root'@'localhost' IDENTIFIED BY '123';
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123';

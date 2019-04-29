@@ -1,0 +1,5 @@
+instalar npm:
+sudo apt install npm
+
+instalar modulo mysql em users\usuario desejado
+npm install mysql
