@@ -33,7 +33,7 @@ con.connect(function(err) {
   });
 
   // insere valores em teste
-  sql = "INSERT INTO teste (id, nome) VALUES (1, 'teste1'),(2, 'teste1'),(3, 'teste1')";
+  sql = "INSERT INTO teste (id, nome) VALUES (1, 'teste1'),(2, 'teste2'),(3, 'teste3')";
   con.query(sql, function (err, result) {
     if (err) throw err;
     console.log("Inseriu tres itens na tabela teste");

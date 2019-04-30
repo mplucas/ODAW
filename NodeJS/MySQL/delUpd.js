@@ -26,4 +26,18 @@ con.connect(function(err) {
     console.log(result);
   });
 
+  // altera item 3 do bd exNode
+  var sql = "UPDATE teste SET nome='teste2' WHERE id = 3";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("Alterou registro com id 3 da tabela teste");
+  });
+
+  // selecionando valores da tabela teste
+  con.query("SELECT * FROM teste", function (err, result, fields) {
+    if (err) throw err;
+    console.log("Valores contidos na tabela teste:")
+    console.log(result);
+  });
+
 });

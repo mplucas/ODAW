@@ -1,10 +1,15 @@
-instalacao:
+atualizar repositorio:
 sudo apt-get update
+
+instalacao mysql:
 sudo apt-get install mysql-server
 
 abrir o shell:
 systemctl start mysql
 sudo /usr/bin/mysql -u root -p
+
+checar se iniciou:
+sudo netstat -plntu
 
 ver bancos de dados
 SHOW DATABASES;

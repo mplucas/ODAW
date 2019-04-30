@@ -1,5 +1,6 @@
 instalar npm:
 sudo apt install npm
 
-instalar modulo mysql em users\usuario desejado
+instalar modulos em pastas desejadas
 npm install mysql
+npm install mongodb

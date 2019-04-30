@@ -1,0 +1,17 @@
+importar chaves:
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 68818C72E52529D4
+
+criar uma lista de origem:
+sudo echo "deb http://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.0.list
+
+atualizar repositorio:
+sudo apt-get update
+
+instalar mongodb:
+sudo apt-get install -y mongodb-org
+
+inicia mongodb:
+sudo systemctl start mongod
+
+checar se iniciou:
+sudo netstat -plntu
